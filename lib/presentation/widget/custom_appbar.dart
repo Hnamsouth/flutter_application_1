@@ -9,6 +9,7 @@ import 'package:flutter_application_1/presentation/nav/ui/search_screen.dart';
 import 'package:flutter_application_1/presentation/widget/circle_avatar.dart';
 import 'package:flutter_application_1/presentation/widget/topic_button.dart';
 import 'package:flutter_application_1/provider/channel_provider.dart';
+import 'package:outline_gradient_button/outline_gradient_button.dart';
 import 'package:provider/provider.dart';
 import 'package:sidebarx/sidebarx.dart';
 import 'package:skeletonizer/skeletonizer.dart';
@@ -208,6 +209,26 @@ class _CustomAppBarState extends State<CustomAppBar> {
                     ))),
       );
 
+  OutlineGradientButton get _newsButton => OutlineGradientButton(
+        onTap: () {},
+        gradient: const LinearGradient(
+          colors: [
+            Colors.red,
+            Colors.redAccent,
+          ],
+        ),
+        strokeWidth: 2,
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+        radius: const Radius.circular(20),
+        child: const Text(
+          "News",
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 15,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+      );
   Container get _subcriptionsAppBar => Container(
       // color: Colors.white24,
       alignment: Alignment.centerLeft,

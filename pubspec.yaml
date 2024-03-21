@@ -47,7 +47,17 @@ dependencies:
   json_annotation: ^4.8.1
   skeletonizer: ^1.1.0
   lazy_load_scrollview: ^1.3.0
-  outline_gradient_button: ^2.0.1+1
+  # new
+  infinite_scroll_pagination: ^4.0.0 #pagination scroll
+  outline_gradient_button: ^2.0.1+1 #gradient button
+  flutter_animated_icons: ^1.0.1 #animated icons
+  flutter_conditional_rendering: ^2.1.0  #conditional rendering
+  animate_gradient: ^0.0.2+1 #background animation
+  animate_do: ^3.3.4 #action animation
+  animations: ^2.0.11 #animation
+  quickly: ^5.5.2 #quickly code
+  #authentication
+  local_auth: ^2.2.0 #biometric
 
 dev_dependencies:
   flutter_test:
